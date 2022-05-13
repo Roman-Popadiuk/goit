@@ -93,7 +93,7 @@ body {
 }
 
 
-/* .hero {
+.hero {
     background: url("/images/imgforbusiness.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-} */
+}
 
 /* .herotext {
     width: 694px;
