@@ -1,10 +1,9 @@
 body {
-    width: 100%px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 .header {
-
     height: 80px;
     display: flex;
     padding: 0 10% 0 10%;
@@ -24,12 +23,10 @@ body {
 }
 
 .web {
-
     color: #2196F3;
 }
 
 .nav {
-
     width: auto;
     height: 16px;
     margin-top: 32px;
@@ -57,7 +54,6 @@ body {
 
 .cont,
 .nav {
-
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -87,9 +83,6 @@ a:focus {
 }
 
 .hero {
-    background-image: url("./images/imgforbusiness.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
     height: 600px;
     background-color: #424242;
     align-items: center;
@@ -98,18 +91,16 @@ a:focus {
 }
 
 .herotext {
-
-    width: 650px;
+    width: 690px;
     height: 120px;
     text-align: center;
+    letter-spacing: 0.06em;
     color: white;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     margin: 200px 0 30px 0;
-
-
 }
 
 .herobutton {
@@ -126,21 +117,18 @@ a:focus {
 }
 
 .herobutton:hover {
-
     box-shadow: inset#000 0 0 10px;
     text-shadow: #000 0 0 1px;
 }
 
-
-
-
 .features {
+
     margin-top: 94px;
     padding: 0 10% 0 10%;
 }
 
 .features h3 {
-
+    margin: 30px 0 10px 0;
     color: #000;
     font-weight: 700;
     font-size: 14px;
@@ -151,12 +139,10 @@ a:focus {
 .features ul {
     display: flex;
     justify-content: space-between;
-
 }
 
 .features li {
-
-
+    padding: 15px;
     width: 270px;
     height: 250px;
     font-weight: 400;
