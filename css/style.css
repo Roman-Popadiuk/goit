@@ -83,8 +83,9 @@ a:focus {
 }
 
 .hero {
+
     height: 600px;
-    background-color: #424242;
+    background: #2F303A;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -123,8 +124,9 @@ a:focus {
 
 .features {
 
+    padding: 5%;
     margin-top: 94px;
-    padding: 0 10% 0 10%;
+
 }
 
 .features h3 {
@@ -142,9 +144,8 @@ a:focus {
 }
 
 .features li {
-    padding: 15px;
-    width: 270px;
-    height: 250px;
+    margin: 15px;
+    width: auto;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
