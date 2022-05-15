@@ -1,14 +1,26 @@
-a {
-    text-decoration: none;
+html,
+body,
+a,
+footer,
+header,
+nav,
+ul,
+li,
+button {
+
+    margin: 0;
+    padding: 0;
     border: none;
+
 }
 
 
 
+a {
+    text-decoration: none;
+}
+
 ul,
 li {
-    display: inline;
-
-    padding: 0;
     list-style: none;
 }
