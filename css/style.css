@@ -87,7 +87,7 @@ a:focus {
 }
 
 .hero {
-    background: url("/images/imgforbusiness.jpg");
+    background-image: url("/images/imgforbusiness.jpg");
     background-position: center;
     background-repeat: no-repeat;
     height: 600px;
