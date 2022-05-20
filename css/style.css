@@ -1,41 +1,58 @@
 :root {
+    --main-font: 'Roboto', sans-serif;
+    --main-font-size: 14px;
+
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
+    --webstudio-color-1: #000000;
+    --webstudio-color-2: #2196F3;
     --hover-focus-color: #2196F3;
+    --primary-bg-color: #e5e5e5;
+    --secondary-white-color: #ffffff;
+    --button-shadow: #000000;
+    --hero-bg-color: #2F303A;
+
+
 
 }
 
 
-
+/* --------------------------------------------Studio------------------------------------- */
 body {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-size: var(--main-font-size);
+    font-family: var(--main-font);
     color: var(--primary-text-color);
-    background-color: #e5e5e5;
+    background-color: var(--primary-bg-color);
 }
 
-
+.container {
+    width: 1200px;
+}
 
 .header {
+
     height: 80px;
     display: flex;
-    padding: 0 10% 0 10%;
-    background-color: #fff;
+    background-color: var(--secondary-white-color);
+    list-style: none;
 }
 
+/* -------------------------------------------------Nav-------------------------------------- */
 .webstudio {
     margin-top: 24px;
-    color: #000000;
+    color: var(--webstudio-color-1);
     height: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-
 }
 
 .web {
-    color: var(--hover-focus-color);
+    color: var(--webstudio-color-2);
 }
+
+
+
 
 .nav {
     width: auto;
@@ -44,31 +61,33 @@ body {
     margin-left: 92px;
 }
 
-.nav li {
-    display: inline;
-    margin: 0 50px 0 0;
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
 }
 
-.contacts {
-    position: absolute;
-    right: 10%;
-    width: auto;
-    height: 16px;
-    margin: 32px 0 0 0;
+.nav-list-item {
+
+    margin-right: 50px;
 }
+
+.link {
+    text-decoration: none;
+}
+
+.contacts {}
 
 .contacts li {
     display: inline;
     margin: 0 0 0 30px;
 }
 
-
 .contacts,
 .nav {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-
 }
 
 .nav a {
@@ -80,22 +99,19 @@ body {
     color: var(--hover-focus-color);
 }
 
-
-
 .contacts a {
     color: var(--secondary-text-color);
 }
 
 .contacts a:hover,
 .contacts a:focus {
-
     color: var(--hover-focus-color)
 }
 
+/* -------------------------------------Hero----------------------------------------- */
 .hero {
-
     height: 600px;
-    background-color: #2F303A;
+    background-color: var(--hero-bg-color);
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -106,7 +122,7 @@ body {
     height: 120px;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: var(--secondary-white-color);
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -115,9 +131,9 @@ body {
 }
 
 .herobutton {
-    color: #ffffff;
+    color: var(--secondary-white-color);
     background: var(--hover-focus-color);
-    box-shadow: #000000 0px 0px 5px;
+    box-shadow: var(--button-shadow) 0px 0px 5px;
     border-radius: 4px;
     padding: 10px 32px;
     height: 50px;
@@ -129,18 +145,18 @@ body {
 
 .herobutton:hover,
 .herobutton:focus {
-    box-shadow: inset #000000 0 0 10px;
-    text-shadow: #000000 0 0 1px;
+    box-shadow: inset var(--button-shadow) 0 0 10px;
+    text-shadow: var(--button-shadow) 0 0 1px;
 }
 
+/* ----------------------------------------Features------------------------------------- */
 .features {
-
-    padding: 5%;
+    padding: 0 5% 0 5%;
     margin-top: 94px;
 
 }
 
-.features h3 {
+.feat-title {
     color: var(--primary-text-color);
     margin: 30px 0 10px 0;
     font-weight: 700;
@@ -153,11 +169,58 @@ body {
     justify-content: space-between;
 }
 
-.features li {
-
+.feat {
     margin: 15px;
     width: auto;
     font-weight: 400;
     line-height: 24px;
     color: var(--secondary-text-color);
+}
+
+/* ------------------------------------What are we doing----------------------------------- */
+.we-doing {
+    padding: 0 5% 0 5%;
+}
+
+.we-doing h2 {
+    text-align: center;
+    margin: 94px 0 50px 0;
+
+}
+
+.we-doing ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -----------------------------------------Our team------------------------------------ */
+.our-team {
+    color: var(--primary-text-color);
+    padding: 0 5% 0 5%;
+    text-align: center;
+}
+
+.our-team p {
+    color: var(--secondary-text-color);
+}
+
+.our-team ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.address {
+    font-style: inherit;
 }
