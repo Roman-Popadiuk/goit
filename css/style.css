@@ -1,29 +1,40 @@
-body {
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --hover-focus-color: #2196F3;
+
 }
+
+
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    background-color: #e5e5e5;
+}
+
+
 
 .header {
     height: 80px;
     display: flex;
     padding: 0 10% 0 10%;
-
-    background: #fff;
+    background-color: #fff;
 }
 
 .webstudio {
     margin-top: 24px;
-    color: #000;
-    width: 145px;
-    height: 31px;
+    color: #000000;
+    height: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
+
 }
 
 .web {
-    color: #2196F3;
+    color: var(--hover-focus-color);
 }
 
 .nav {
@@ -38,54 +49,53 @@ body {
     margin: 0 50px 0 0;
 }
 
-.cont {
+.contacts {
     position: absolute;
     right: 10%;
     width: auto;
     height: 16px;
-    margin-top: 32px;
+    margin: 32px 0 0 0;
 }
 
-.cont li {
+.contacts li {
     display: inline;
     margin: 0 0 0 30px;
 }
 
 
-.cont,
+.contacts,
 .nav {
     font-weight: 500;
-    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 
 }
 
 .nav a {
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .nav a:hover,
-a:focus {
-    color: #2196F3;
+.nav a:focus {
+    color: var(--hover-focus-color);
 }
 
 
 
-.cont a {
-    color: #757575;
+.contacts a {
+    color: var(--secondary-text-color);
 }
 
-.cont a:hover,
-a:focus {
+.contacts a:hover,
+.contacts a:focus {
 
-    color: #2196F3;
+    color: var(--hover-focus-color)
 }
 
 .hero {
 
     height: 600px;
-    background: #2F303A;
+    background-color: #2F303A;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -96,7 +106,7 @@ a:focus {
     height: 120px;
     text-align: center;
     letter-spacing: 0.06em;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -105,9 +115,9 @@ a:focus {
 }
 
 .herobutton {
-    color: #fff;
-    background: #2196F3;
-    box-shadow: #000 0px 0px 5px;
+    color: #ffffff;
+    background: var(--hover-focus-color);
+    box-shadow: #000000 0px 0px 5px;
     border-radius: 4px;
     padding: 10px 32px;
     height: 50px;
@@ -117,9 +127,10 @@ a:focus {
     line-height: 30px;
 }
 
-.herobutton:hover {
-    box-shadow: inset#000 0 0 10px;
-    text-shadow: #000 0 0 1px;
+.herobutton:hover,
+.herobutton:focus {
+    box-shadow: inset #000000 0 0 10px;
+    text-shadow: #000000 0 0 1px;
 }
 
 .features {
@@ -130,10 +141,9 @@ a:focus {
 }
 
 .features h3 {
+    color: var(--primary-text-color);
     margin: 30px 0 10px 0;
-    color: #000;
     font-weight: 700;
-    font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
 }
@@ -144,10 +154,10 @@ a:focus {
 }
 
 .features li {
+
     margin: 15px;
     width: auto;
     font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
