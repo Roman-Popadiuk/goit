@@ -369,24 +369,30 @@ body {
 }
 
 .filters {
-    margin-top: 94px;
+    margin: 94px 0 94px 0;
 }
 
 
 .filters-item {
+    padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .filters .container {
     flex-direction: column;
+    display: block;
 }
 
 .filters-card {
+    margin: 15px auto;
     width: 370px;
     height: 404px;
     border: 1px solid var(--border-card-color);
 }
+
 
 .filters-card-title {
     margin: 20px auto 0 24px;
