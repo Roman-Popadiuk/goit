@@ -12,7 +12,8 @@
     --secondary-bg-color: #F5F4FA;
     --secondary-white-color: #ffffff;
     --hero-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    --hero-bg-color: #2F303A;
+    --hero-bg-color: url('../images/imgoverlay.png');
+    --hero-secondary-bg: url('../images/imgforbusiness.jpg');
     --footer-bg-color: #2F303A;
     --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -28,6 +29,7 @@
 
 
 
+
 }
 
 
@@ -40,6 +42,12 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
     letter-spacing: 0.03em;
+}
+
+
+
+.feat-i {
+    background: url(../images/antenna.svg) center top no-repeat, url(../images/Rectangle\ 3.svg) center top no-repeat;
 }
 
 .container {
@@ -121,6 +129,7 @@ body {
 .nav .link:hover,
 .nav .link:focus {
     color: var(--hover-focus-color);
+
 }
 
 .contacts .link {
@@ -138,7 +147,7 @@ body {
 /* -------------------------------------Hero----------------------------------------- */
 .hero {
     height: 600px;
-    background-color: var(--hero-bg-color);
+    background: var(--hero-bg-color), var(--hero-secondary-bg) center no-repeat;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -184,7 +193,12 @@ body {
 }
 
 .feat-item {
+    background: url('../images/antenna.svg') center 25px no-repeat, url('../images/Rectangle3.svg') no-repeat;
+    border-radius: 4px;
     width: 270px;
+    height: 251px;
+
+
 }
 
 .feat-item+.feat-item {
@@ -193,7 +207,7 @@ body {
 
 .feat-title {
     color: var(--primary-text-color);
-    margin: 0 0 10px 0px;
+    margin: 150px 0 10px 0px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -202,9 +216,6 @@ body {
 
 .feat-descr {
     margin: 0;
-
-    /* ??????? font-weight: 400; непотрібен - він іде по-дефолту з браузера. я правильно зрозумів?   */
-
     line-height: 1.71;
     color: var(--secondary-text-color);
 }
