@@ -12,7 +12,7 @@
     --secondary-bg-color: #F5F4FA;
     --secondary-white-color: #ffffff;
     --hero-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    --hero-bg-color: url('../images/imgoverlay.png');
+    --hero-bg-color: rgba(33, 33, 33, 0.5);
     --hero-secondary-bg: url('../images/imgforbusiness.jpg');
     --footer-bg-color: #2F303A;
     --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -27,9 +27,7 @@
     --border-header-color: #ECECEC;
     --border-card-color: #eeeeee;
 
-
-
-
+    --feat-bg: url('../images/rectangle3.svg')
 }
 
 
@@ -47,7 +45,7 @@ body {
 
 
 .feat-i {
-    background: url(../images/antenna.svg) center top no-repeat, url(../images/Rectangle\ 3.svg) center top no-repeat;
+    background: url(../images/antenna.svg) center top no-repeat, var(--)t;
 }
 
 .container {
@@ -97,15 +95,18 @@ body {
     margin-left: 92px;
 }
 
-.nav-item+.nav-item,
-.contacts-item+.contacts-item {
+.nav-item+.nav-item {
     margin-left: 50px;
 }
 
+.contacts-item+.contacts-item {
+    margin-left: 30px;
+}
 
+.contacts-item {}
 
 .contacts {
-    margin-left: 330px;
+    margin-left: 305px;
     margin-top: 32px;
 }
 
@@ -133,12 +134,14 @@ body {
 }
 
 .contacts .link {
+    padding-left: 25px;
     color: var(--secondary-text-color);
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
-    color: var(--hover-focus-color)
+    background: url('../images/envelope\(hover\).svg') left center no-repeat;
+    color: var(--hover-focus-color);
 }
 
 
@@ -147,7 +150,9 @@ body {
 /* -------------------------------------Hero----------------------------------------- */
 .hero {
     height: 600px;
-    background: var(--hero-bg-color), var(--hero-secondary-bg) center no-repeat;
+    background: var(--hero-secondary-bg) center no-repeat, var(--hero-bg-color);
+    background-blend-mode: multiply;
+
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -193,7 +198,7 @@ body {
 }
 
 .feat-item {
-    background: url('../images/antenna.svg') center 25px no-repeat, url('../images/Rectangle3.svg') no-repeat;
+    background: var(--feat-bg) no-repeat;
     border-radius: 4px;
     width: 270px;
     height: 251px;
