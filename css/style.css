@@ -28,7 +28,7 @@
     --border-card-color: #eeeeee;
 
     --features-child-1: url('../images/antenna.svg')center 25px no-repeat,
-        url('../images/rectangle3.svg') center top/270px 120px no-repeat;
+        url('../images/rectangle3.svg') no-repeat;
     --features-child-2: url('../images/clock.svg')center 25px no-repeat,
         url('../images/rectangle3.svg') center top/270px 120px no-repeat;
     --features-child-3: url('../images/diagram.svg')center 25px no-repeat,
