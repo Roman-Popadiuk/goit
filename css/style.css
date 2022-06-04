@@ -27,7 +27,16 @@
     --border-header-color: #ECECEC;
     --border-card-color: #eeeeee;
 
-    --feat-bg: url('../images/rectangle3.svg')
+    --feat-bg: url('../images/rectangle3.svg');
+
+    --features-child-1: url('../images/antenna.svg   ')center 25px no-repeat,
+        var(--feat-bg) no-repeat;
+    --features-child-2: url('../images/clock.svg   ')center 25px no-repeat,
+        var(--feat-bg) no-repeat;
+    --features-child-3: url('../images/diagram.svg   ')center 25px no-repeat,
+        var(--feat-bg) no-repeat;
+    --features-child-4: url('../images/astronaut.svg   ')center 25px no-repeat,
+        var(--feat-bg) no-repeat;
 }
 
 
@@ -43,10 +52,6 @@ body {
 }
 
 
-
-.feat-i {
-    background: url(../images/antenna.svg) center top no-repeat, var(--)t;
-}
 
 .container {
     width: 1170px;
@@ -140,9 +145,11 @@ body {
 
 .contacts .link:hover,
 .contacts .link:focus {
-    background: url('../images/envelope\(hover\).svg') left center no-repeat;
+    background: url('../images/envelope.svg') left center no-repeat;
     color: var(--hover-focus-color);
 }
+
+
 
 
 
@@ -197,13 +204,27 @@ body {
     margin-top: 94px;
 }
 
+
 .feat-item {
-    background: var(--feat-bg) no-repeat;
     border-radius: 4px;
     width: 270px;
     height: 251px;
+}
 
+.features.list>:first-child {
+    background: var(--features-child-1);
+}
 
+.features.list>:nth-child(2) {
+    background: var(--features-child-2);
+}
+
+.features.list>:nth-child(3) {
+    background: var(--features-child-3);
+}
+
+.features.list>:last-child {
+    background: var(--features-child-4);
 }
 
 .feat-item+.feat-item {
@@ -273,7 +294,7 @@ body {
 
 .team-card {
     width: 270px;
-    height: 368px;
+    height: 428px;
     background-color: var(--primary-bg-color);
     text-align: center;
     font-size: 16px;
