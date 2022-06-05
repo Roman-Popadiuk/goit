@@ -213,19 +213,22 @@ body {
 
 .features.list>:first-child {
     background: var(--features-child-1), var(--feat-bg);
-    background-blend-mode: multiply;
+
 }
 
 .features.list>:nth-child(2) {
-    background: var(--features-child-2);
+    background: var(--features-child-2), var(--feat-bg);
+
 }
 
 .features.list>:nth-child(3) {
-    background: var(--features-child-3);
+    background: var(--features-child-3), var(--feat-bg);
+
 }
 
 .features.list>:last-child {
-    background: var(--features-child-4);
+    background: var(--features-child-4), var(--feat-bg);
+
 }
 
 .feat-item+.feat-item {
