@@ -213,6 +213,7 @@ body {
 
 .features.list>:first-child {
     background: var(--features-child-1), var(--feat-bg);
+    background-blend-mode: multiply;
 }
 
 .features.list>:nth-child(2) {
