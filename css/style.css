@@ -3,6 +3,8 @@
     --secondry-font: 'Raleway', sans-serif;
     --main-font-size: 14px;
 
+
+
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --webstudio-color: #000000;
@@ -39,6 +41,16 @@
 
 }
 
+.hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+
+}
 
 
 
@@ -111,14 +123,16 @@ body {
 
 
 .contacts {
-    margin-left: 305px;
+    margin-left: 300px;
     margin-top: 32px;
+
 }
 
 
 
 .contacts,
 .nav {
+    height: 16px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -139,15 +153,51 @@ body {
 }
 
 .contacts .link {
-    padding-left: 25px;
+
     color: var(--secondary-text-color);
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
-    background: url('../images/envelope.svg') left center no-repeat;
     color: var(--hover-focus-color);
 }
+
+.contacts.list>:first-child::before {
+    content: '';
+    background-image: url('../images/envelope.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 16px 12px;
+    padding-left: 26px;
+}
+
+.contacts.list>:first-child:hover::before {
+    content: '';
+    background-image: url('../images/envelope-hover.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 16px 12px;
+    padding-left: 26px;
+}
+
+.contacts.list>:last-child::before {
+    content: '';
+    background-image: url('../images/smartphone.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 10px 16px;
+    padding-left: 20px;
+}
+
+.contacts.list>:last-child:hover::before {
+    content: '';
+    background-image: url('../images/smartphone-hover.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 10px 16px;
+    padding-left: 20px;
+}
+
 
 
 
@@ -210,6 +260,7 @@ body {
     width: 270px;
     height: 251px;
 }
+
 
 .features.list>:first-child {
     background: var(--features-child-1), var(--feat-bg);
@@ -314,7 +365,7 @@ body {
 }
 
 .team-position {
-    margin: 0 0 30px 0;
+    margin: 0;
     color: var(--secondary-text-color);
 }
 
@@ -322,6 +373,69 @@ body {
     margin-left: 30px;
 }
 
+.social-item+.social-item {
+    margin-left: 10px;
+}
+
+.social.list {
+    width: 206px;
+    height: 44px;
+    margin: 16px 32px 30px 32px;
+
+}
+
+.social-link {
+
+
+    flex-direction: column;
+}
+
+
+
+.sim:hover path {
+    fill: #ffffff;
+}
+
+.sim:hover .ellipse {
+    fill: #2196F3;
+
+}
+
+
+
+.social.list>:nth-child(2) {
+    background-color: var(--primary-bg-color);
+    background-image: url('../images/twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 100%;
+}
+
+.social.list>:nth-child(3) {
+    background-color: var(--primary-bg-color);
+    background-image: url('../images/facebook.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 100%;
+}
+
+.social.list>:last-child {
+    background-color: var(--primary-bg-color);
+    background-image: url('../images/linkedin.svg');
+    fill: #2196F3;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 100%;
+}
+
+
+/* ---------------------------------------Footer------------------------------------------ */
 .footer {
     height: 252px;
     background-color: var(--footer-bg-color);
