@@ -385,12 +385,13 @@ body {
 }
 
 .social-link {
-
-
     flex-direction: column;
 }
 
-
+.sim {
+    height: 44px;
+    width: 44px;
+}
 
 .sim:hover path {
     fill: #ffffff;
